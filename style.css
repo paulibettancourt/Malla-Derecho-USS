@@ -1,0 +1,59 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #fff0f5; /* rosado suave */
+  margin: 0;
+  padding: 15px;
+}
+h1 {
+  text-align: center;
+  color: #c2185b;
+}
+
+.sub {
+  text-align: center;
+  font-size: 0.9em;
+  color: #880e4f;
+}
+
+.malla {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 15px;
+}
+.semestre {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 10px;
+	
+  box-shadow: 0 4px 8px rgba(194, 24, 91, 0.15);
+}
+
+.semestre h2 {
+  text-align: center;
+  background: linear-gradient(135deg, #f06292, #ec407a);
+  color: white;
+  padding: 10px;
+  border-radius: 12px;
+  font-size: 1em;
+}
+
+.ramo {
+  background: #fce4ec;
+  margin: 6px 0;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  color: #880e4f;
+  font-size: 0.95em;
+}
+
+.ramo:hover {
+  background: #f8bbd0;
+}
+
+/* ramo aprobado */
+.ramo.aprobado {
+  background: #f48fb1;
+  color: white;
+  text-decoration: line-through;
+}
